@@ -1,27 +1,12 @@
-# ESM Hello World example
+# Sakila Front-end
 
-This example shows the most basic idea behind Next.js, and it's running on native [esm](https://nodejs.org/api/esm.html) mode. We have 2 pages: `pages/index.js` and `pages/about.js`. The former responds to `/` requests and the latter to `/about`. Using `next/link` you can add hyperlinks between them with universal routing capabilities. The `day` directory shows that you can have subdirectories.
+This repo will serve as the front-end for the admin interface to the sakila movie rental database.
 
-## Deploy your own
+The plan is to rewrite all of this code.  A REST API will be built using Nest js to access the database and utilize the
+balderdashy/waterline ORM.
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example-esm) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/hello-world-esm)
+## Implementation so far:
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/hello-world-esm&project-name=hello-world-esm&repository-name=hello-world-esm)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example hello-world-esm hello-world-esm-app
-```
-
-```bash
-yarn create next-app --example hello-world-esm hello-world-esm-app
-```
-
-```bash
-pnpm create next-app --example hello-world-esm hello-world-esm-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+- One of the main features implemented is using fuzzy search to find movies based on title and description.
+- Once a list of movies has been filtered you can click the icon on the left side of the table to take you to a details
+  page.
